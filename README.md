@@ -2,7 +2,7 @@
 
 <h1>
 
-![Prisma](image-1.png)
+![image-1.png](image-1.png)
 
   </h1>
 
