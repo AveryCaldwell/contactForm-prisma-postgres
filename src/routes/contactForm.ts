@@ -1,7 +1,7 @@
 import express from "express";
-import { PrismaClient } from "@prisma/client";
-
 const router = express.Router();
+
+import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 // Handle POST request for the contact form

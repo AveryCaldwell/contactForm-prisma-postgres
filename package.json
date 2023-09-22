@@ -4,7 +4,7 @@
 	"scripts": {
 		"start": "nodemon index.ts",
 		"test": "jest",
-		"seed": "ts-node ./src/prisma/seed.ts"
+		"seed": "ts-node ./src/seed.ts"
 	},
 	"dependencies": {
 		"@prisma/client": "^5.3.1",
