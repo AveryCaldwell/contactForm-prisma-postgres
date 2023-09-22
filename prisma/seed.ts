@@ -19,7 +19,11 @@ async function seed() {
 					email: "alicesmith@example.com",
 					message: "Hello, this is Alice. Please contact me.",
 				},
-				// Add more dummy data as needed
+				{
+					name: "Avery Bob",
+					email: "averybob@example.com",
+					message: "Hello, this is Avery. Please get this to work!",
+				},
 			],
 		});
 

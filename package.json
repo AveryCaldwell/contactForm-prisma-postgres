@@ -2,9 +2,8 @@
 	"name": "contact-form",
 	"version": "1.0.0",
 	"scripts": {
-		"start": "nodemon index.ts",
-		"test": "jest",
-		"seed": "ts-node ./src/seed.ts"
+		"start": "nodemon ./server.js",
+		"seed": "ts-node ./prisma/seed.ts"
 	},
 	"dependencies": {
 		"@prisma/client": "^5.3.1",
@@ -20,6 +19,6 @@
 		"typescript": "^5.2.2"
 	},
 	"prisma": {
-		"seed": "ts-node ./src/prisma/seed.ts"
+		"seed": "ts-node ./prisma/seed.ts"
 	}
 }

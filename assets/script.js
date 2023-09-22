@@ -11,8 +11,13 @@ document.addEventListener("DOMContentLoaded", function () {
 			method: "POST",
 			body: formData,
 		})
-			.then((response) => response.json())
+			.then((response) => {
+				console.log("Response status:", response);
+				// return response.json();
+			})
 			.then((data) => {
+				console.log("Data received:", data);
+
 				if (data.message) {
 					responseDiv.textContent = data.message;
 					contactForm.reset();
@@ -21,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				}
 			})
 			.catch((error) => {
-				console.error("Error:", error);
+				console.error("Fetch error:", error);
 				responseDiv.textContent =
 					"An error occurred while submitting the form.";
 			});

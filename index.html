@@ -4,12 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Contact Form</title>
-		<link rel="stylesheet" href="./assets//styles.css" />
+		<link rel="stylesheet" href="./assets/styles.css" />
 	</head>
 	<body>
 		<div class="container">
 			<h1>Contact Me</h1>
-			<form id="contact-form">
+			<form id="contact-form" action="/contact/submit" method="POST">
 				<label for="name">Name:</label>
 				<input type="text" id="name" name="name" required />
 				<label for="email">Email:</label>
